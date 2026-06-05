@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sala de chat</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="chat">
+      <header class="topbar">
+        <div>
+          <h1>Sala de chat</h1>
+          <p>Comparte el enlace de la sala para hablar con amigos.</p>
+        </div>
+        <button id="copyLink" type="button">Copiar enlace</button>
+      </header>
+
+      <section class="setup" aria-label="Datos de sala">
+        <label>
+          Tu nombre
+          <input id="name" maxlength="24" placeholder="Ej: Fran">
+        </label>
+        <label>
+          Sala
+          <input id="room" maxlength="40" placeholder="Ej: amigos">
+        </label>
+        <button id="join" class="primary" type="button">Entrar</button>
+      </section>
+
+      <section id="messages" class="messages" aria-live="polite"></section>
+
+      <form id="form" class="composer">
+        <input id="text" maxlength="500" autocomplete="off" placeholder="Escribe un mensaje..." disabled>
+        <button id="send" class="primary" type="submit" disabled>Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

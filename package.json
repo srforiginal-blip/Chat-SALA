@@ -1,0 +1,12 @@
+{
+  "name": "chat-sala",
+  "version": "1.0.0",
+  "description": "Sala de chat simple con salas por enlace y mensajes en vivo.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
